@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --main-bg-color: #2e7bff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* HEADER */
+
+header {
+    background: var(--main-bg-color);
+    font-family: "Lato", sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 180px;
+    padding: 0 25px;
+}
+
+/* NAVIGATION */
+
+nav ul {
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-weight: bolder;
+}
+
+
+/* SEARCH BAR */
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 493px;
+    height: 27px;
+    border-radius: 5px;
+    margin: 0 16px 0 56px;
+    padding: 0 12px;
+    border: none;
+}
+
+.search button {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* SLIDER */
+
+.slider {
+    width: 80vw;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.slider img {
+    width: 80vw;
+    height: auto;
+    border-radius: 6px;
+}
+
+
+/* MAIN CONTAINER */
+
+.container {
+    min-height: calc(100vh - 58px - 12vh);
+}
+
+
+/* CATEGORY CARD SECTION */
+
+.card {
+    max-width: 91vw;
+    margin: 30px auto;
+    font-family: "Lato", sans-serif;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.card h2 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/* PRODUCT ITEM */
+
+.card-item {
+    width: 180px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+
+/* PRODUCT IMAGE */
+
+.card-item img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+
+
+/* PRODUCT TEXT */
+
+.lines {
+    text-align: center;
+}
+
+.lines p {
+    margin: 4px 0;
+}
+
+
+/* HOVER EFFECT */
+
+.card-item:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+
+/* FOOTER */
+
+footer {
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: "Lato", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
